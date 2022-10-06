@@ -8,12 +8,10 @@
 import UIKit
 
 class FilmsCell: UICollectionViewCell {
+  
     
     @IBOutlet weak var filmImage: UIImageView!
-
-    
-    func setupCell(film: Film){
         
-    }
     
+
 }

@@ -8,15 +8,14 @@
 import UIKit
 
 
-
 class ViewController: UIViewController {
+
     
     @IBOutlet private weak var colectionView: UICollectionView!
     
     
     var film: Film?
     var posterArray: [String] = []
-    
     
     
     override func viewDidLoad() {
@@ -45,11 +44,10 @@ class ViewController: UIViewController {
                     
                     self.film = date
                     guard self.film != nil else { return }
-                    
+    
                     film?.docs.forEach({ i in
                         posterArray.append(i.poster.url)
                     })
-                    
                     print(posterArray)
                     print(film?.docs[1].name ?? "server error")
                     colectionView.reloadData()
