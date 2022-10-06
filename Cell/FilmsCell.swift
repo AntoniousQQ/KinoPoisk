@@ -10,13 +10,10 @@ import UIKit
 class FilmsCell: UICollectionViewCell {
     
     @IBOutlet weak var filmImage: UIImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-      
-    }
+
     
     func setupCell(film: Film){
         
     }
+    
 }
